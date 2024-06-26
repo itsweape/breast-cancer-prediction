@@ -38,12 +38,12 @@ def predict():
         ]
         features = np.array(features).reshape(1, -1)
         
-        print("Features:", features)  # Debug statement to check features
+        print("Features:", features)  
 
         prediction = model.predict(features)[0]
-        print("Prediction:", prediction)  # Debug statement to check prediction
+        print("Prediction:", prediction)  
 
-        # Determine diagnosis from prediction
+  
         diagnosis = "Malignant" if prediction == 1 else "Benign"
 
     except Exception as e:
